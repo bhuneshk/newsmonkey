@@ -17,6 +17,27 @@ export default class NavBar extends Component {
               <li className="nav-item">
                 <a className="nav-link text-light" href="/about">About</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link text-light" href="/about">Business</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-light" href="/about">Entertainment</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-light" href="/about">General</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-light" href="/about">Health</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-light" href="/about">Science</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-light" href="/about">Sports</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-light" href="/about">Technology</a>
+              </li>
             </ul>
           </div>
         </div>
