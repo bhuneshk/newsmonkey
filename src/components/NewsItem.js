@@ -1,25 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class NewsItem extends Component {
+const NewsItem =(props)=>{
 
-  render() {
-    let { title, description, imageUrl, newsUrl, author, date, Source} = this.props;
     return (
       <div className="card my-3">
         <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{zIndex: 1, left:'90%'}}>
-          {Source.name}
+          {props.Source.name}
 
         </span>
-        <img src={imageUrl} className="card-img-top" alt="..." />
+        <img src={props.imageUrl} className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">{title}</h5>
-          <p className="card-text">{description}</p>
-          <p className="card-text"><small className="text-body-secondary">By {author ? author : 'Unknown'} on {new Date(date).toUTCString()}</small></p>
-          <a href={newsUrl} target='_blank' className="btn btn-sm btn-dark mb-2" >Read More</a>
+          <h5 className="card-title">{props.title}</h5>
+          <p className="card-text">{props.description}</p>
+          <p className="card-text"><small className="text-body-secondary">By {props.author ? props.author : 'Unknown'} on {new Date(props.date).toUTCString()}</small></p>
+          <a href={props.newsUrl} target='_blank' className="btn btn-sm btn-dark mb-2" >Read More</a>
         </div>
       </div>
     )
-  }
 }
 
 export default NewsItem
